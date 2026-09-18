@@ -31,8 +31,8 @@ dependencies = []
 apk-analyzer = "apk_analyzer.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/USERNAME/apk-analyzer"
-Source = "https://github.com/USERNAME/apk-analyzer"
+Homepage = "https://github.com/3046465294/apk-analyzer"
+Source = "https://github.com/3046465294/apk-analyzer"
 
 [tool.setuptools]
 packages = ["apk_analyzer"]
