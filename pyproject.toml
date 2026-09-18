@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "apk-analyzer"
+version = "0.1.0"
+description = "Dependency-free Android APK / DEX structure analyzer — parses the ZIP container, DEX header and APK signature layout directly from the format specs."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Geng Shijia", email = "3046465294@qq.com" }]
+keywords = ["android", "apk", "dex", "zip", "adler32", "reverse-engineering", "forensics", "qa"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Software Development :: Quality Assurance",
+  "Topic :: Software Development :: Testing",
+  "Topic :: Utilities",
+]
+# 刻意声明无依赖 —— 这正是本项目的卖点
+dependencies = []
+
+[project.scripts]
+apk-analyzer = "apk_analyzer.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/USERNAME/apk-analyzer"
+Source = "https://github.com/USERNAME/apk-analyzer"
+
+[tool.setuptools]
+packages = ["apk_analyzer"]
