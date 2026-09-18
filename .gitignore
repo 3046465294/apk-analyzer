@@ -49,3 +49,6 @@ desktop.ini
 !tests/fixtures/*.apk
 out/
 *.log
+
+# 个人发布清单，不随仓库公开
+PUBLISH.md
